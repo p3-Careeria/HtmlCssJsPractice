@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Hiragana Quiz</title>
+
+    <script src="hirag3JS.js"></script>
+    <link rel="shortcut icon" href="a_icon.ico">
+    <link rel="stylesheet" type="text/css" href="../styleCSS.css">
+    <meta charset="UTF-8">
+
+</head>
+
+<body>
+    <div class="bgDiv" id="HiragBg">
+        <div class="mainBox" style="height: 620px; margin-top: -310px;">
+
+            <img src="hirags\\empty.png" id="hiragIMG"></img>
+
+            <p id="yourScore"> Your score: </p>
+            <div class="HiragFields" id="scoreField" style="margin-top: 55px; margin-left: -117px;">0 / 0 </div>
+
+            <p id="timeLeft"> Time left: </p>
+            <div class="HiragFields" id="timerField" style="margin-top: 55px; margin-left: 13px;"> 60 </div>
+
+            <button id="btnOneHirag" onclick="checkAnswer(1); hiragImgShuffle(); buttonShuffle(); "> </button>
+            <button id="btnTwoHirag" onclick="checkAnswer(2); hiragImgShuffle(); buttonShuffle(); "></button>
+            <button id="btnThreeHirag" onclick="checkAnswer(3); hiragImgShuffle(); buttonShuffle(); "> </button>
+            <button id="btnFourHirag" onclick="checkAnswer(4); hiragImgShuffle(); buttonShuffle(); "> </button>
+            <button id="btnStartHirag" onclick="startGame();">Start</button>
+
+        </div>
+</body>
+
+</html>

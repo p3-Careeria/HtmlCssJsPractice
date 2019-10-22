@@ -1,0 +1,358 @@
+body {
+
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, helvetica, sans-serif;
+    color: black;
+
+    text-align: justify;
+    text-justify: inter-word;
+
+
+}
+h1 {
+    font-size:50px;
+    margin-left: 30px;
+}
+p {
+    font-size: 25px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.bgDiv {
+    width:  1230px;	
+    height: 2020px; 
+    
+	
+	position: fixed;
+ 	top: 50%;
+    left: 50%;
+    margin-left: -615px;
+  	margin-top: -1010px;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+   
+}
+#IndexBg {
+    background-image: url("indexBG.png");
+    
+}
+#GuessBg {
+    background-image: url("guessNo/guessBG.png");
+
+}
+#HiragBg {
+    background-image: url("Hirag/hiragBG.png");
+
+}
+#CalcBg {
+    background-image: url("Calc/calcBG.png");
+
+}
+.mainBox {
+
+    width:  400px;	
+	height: 550px; 
+	
+	position: fixed;
+ 	top: 50%;
+    left: 50%;
+    margin-left: -200px;
+  	margin-top: -275px;
+
+    background: linear-gradient (white,rgb(215, 215, 215));
+    background: -webkit-linear-gradient(white,rgb(215, 215, 215));
+    background: -moz-linear-gradient(white,rgb(215, 215, 215));
+
+    border:  3px;
+    border-style: solid; 
+    border-color: rgb(49, 49, 49);
+    border-radius: 20px;
+
+    /* Oikealle alas blur spread. rgba: r, g, b, transparensy */ 
+    -webkit-box-shadow: 10px 10px 20px 5px rgba(0,0,0, 0.5);  
+    -moz-box-shadow:    10px 10px 20px 5px rgba(0,0,0, 0.5);
+    box-shadow:        10px 10px 20px 5px rgba(0,0,0, 0.5);
+
+}
+#MbGuess {
+    height: 500px;
+    margin-top: -250px;
+}
+
+
+/* btns */ 
+
+button {
+    height: 125px;
+    width: 300px;
+    position: fixed;
+    top: 50%;
+    left:50%; 
+    border-radius: 10px;
+    outline: none;
+    -webkit-box-shadow: 2px 2px 4px 1px rgba(0,0,0, 0.3);  
+    -moz-box-shadow:    2px 2px 4px 1px rgba(0,0,0, 0.3);
+     box-shadow:        2px 2px 4px 1px rgba(0,0,0, 0.3);
+
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.35, #ffffff), color-stop(1, #dedede));
+	background:-moz-linear-gradient(top, #ffffff 35%, #dedede 100%);
+	background:-webkit-linear-gradient(top, #ffffff 35%, #dedede 100%);
+	background:-o-linear-gradient(top, #ffffff 35%, #dedede 100%);
+	background:-ms-linear-gradient(top, #ffffff 35%, #dedede 100%);
+	background:linear-gradient(to bottom, #ffffff 35%, #dedede 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#dedede',GradientType=0);
+	background-color:#ffffff;
+    font: inherit;
+	font-size:14pt;
+
+	text-decoration:none;
+
+}
+button:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #dedede), color-stop(1, #ffffff));
+	background:-moz-linear-gradient(top, #dedede 5%, #ffffff 100%);
+	background:-webkit-linear-gradient(top, #dedede 5%, #ffffff 100%);
+	background:-o-linear-gradient(top, #dedede 5%, #ffffff 100%);
+	background:-ms-linear-gradient(top, #dedede 5%, #ffffff 100%);
+	background:linear-gradient(to bottom, #dedede 5%, #ffffff 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#dedede', endColorstr='#ffffff',GradientType=0);
+	background-color:#dedede;
+}
+
+
+/*INDEX ------------------------------------------------------------------*/
+#btnQuizz {
+    margin-top: -200px;
+    margin-left: -150px;
+}
+
+#btnHirag {
+ 
+    margin-top: -67.5px;
+    margin-left: -150px;
+}
+#btnCalc {
+    margin-top: 65px;
+    margin-left: -150px;
+
+}
+/*QUIZZZZZ--------------------------------------------------------------- */ 
+#guessNoBtn {
+    height: 50px;
+    width: 300px;
+    margin-top: 20px;
+    margin-left: -150px;
+  
+}
+/* HIRAGANA ------------------------------------------------------------ */ 
+#btnOneHirag {
+    height: 50px;
+    width: 110px;
+    margin-top: 105px;
+    margin-left: -120px;
+
+}
+#btnTwoHirag {
+    height: 50px;
+    width: 110px;
+    margin-top: 105px;
+    margin-left: 10px;
+}
+#btnThreeHirag {
+    height: 50px;
+    width: 110px;
+    margin-top: 165px;
+    margin-left: -120px;
+
+}
+#btnFourHirag {
+    height: 50px;
+    width: 110px;
+    margin-top: 165px;
+    margin-left: 10px;
+
+}
+#btnStartHirag {
+    height: 50px;
+    width: 160px;
+    margin-top: 230px;
+    margin-left: -80px;
+}
+#hiragIMG {
+    position: fixed;
+    width:  275px; 
+    height: 275px;
+    top: 50%;
+    left: 50%;
+    margin-top: -270px;
+    margin-left: -137.5px;
+
+    border-radius: 20px;
+
+    -webkit-box-shadow: 8px  8px 15px 3px rgba(0,0,0, 0.3);  
+    -moz-box-shadow:    8px 8px 15px 3px rgba(0,0,0, 0.3);
+     box-shadow:        8px 8px 15px 3px rgba(0,0,0, 0.3);
+
+
+}
+.HiragFields {
+    text-align: center;
+    padding-top: 5px;
+    
+    background-color: white;
+    width: 105px;
+    height: 25px;
+
+    position: fixed;
+    top: 50%;
+    left: 50%; 
+    
+    border-radius: 3px;
+
+    -webkit-box-shadow: 4px  4px 7.5px 1.5px rgba(0,0,0, 0.3);  
+    -moz-box-shadow:    4px 4px 7.5px 1.5px rgba(0,0,0, 0.3);
+     box-shadow:        4px 4px 7.5px 1.5px rgba(0,0,0, 0.3);
+
+}
+#yourScore {
+    font-size: 14pt; 
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: 25px;
+    margin-left: -117px;
+
+}
+#timeLeft {
+    font-size: 14pt; 
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: 25px;
+    margin-left: 13px;
+
+}
+/* CALCULATOR -----------------------------------------------------------*/ 
+.calcBtn {
+	height: 80px;
+    width: 80px;
+
+}
+#btn7 {
+    margin-top: -115px;
+    margin-left: -163px;
+}
+#btn8 {
+    margin-top: -115px;
+    margin-left: -81px;
+}
+#btn9 {
+    margin-top: -115px;
+    margin-left: 1px;
+}
+#btnJ {
+    margin-top: -115px;
+    margin-left: 83px; 
+}
+
+/* 2 */ 
+
+#btn4 {
+    margin-top: -34px;
+    margin-left: -163px;
+}
+#btn5 {
+    margin-top: -34px;
+    margin-left: -81px;
+}
+#btn6 {
+    margin-top: -34px;
+    margin-left: 1px;
+}
+#btnX {
+    margin-top: -34px;
+    margin-left: 83px;
+}
+/* 3 */ 
+#btn1 {
+    margin-top: 47px;
+    margin-left: -163px;
+}
+#btn2 {
+    margin-top: 47px;
+    margin-left: -81px;
+}
+#btn3 {
+    margin-top: 47px;
+    margin-left: 1px;
+}
+#btnM {
+    margin-top: 47px;
+    margin-left: 83px; 
+}
+/* 4 */ 
+#btnC {
+    margin-top: 128px;
+    margin-left: -163px;
+}
+#btn0 {
+    margin-top: 128px;
+    margin-left: -81px;
+ }
+#btnPi {
+    margin-top: 128px;
+    margin-left: 1px;
+}
+#btnP {
+    margin-top: 128px;
+    margin-left: 83px; 
+}
+/* 5 */ 
+#btnBS {
+    margin-top: 209px;
+    margin-left: -163px;
+}
+#btnSA {
+    margin-top: 209px;
+    margin-left: -81px;
+}
+#btnSK {
+    margin-top: 209px;
+    margin-left: 1px;
+}
+#btnO {
+    margin-top: 209px;
+    margin-left: 83px; 
+}
+/**/ 
+#naytto {
+     
+    padding-top: 5px;
+    background-color: white;
+    width: 325px;
+    height: 75px;
+
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+
+    position: fixed;
+    top: 50%;
+    left: 50%; 
+    margin-top: -190px;
+    margin-left: -162.5px;
+
+    border-radius: 3px;
+
+    -webkit-box-shadow: 4px  4px 7.5px 1.5px rgba(0,0,0, 0.3);  
+    -moz-box-shadow:    4px 4px 7.5px 1.5px rgba(0,0,0, 0.3);
+    box-shadow:        4px 4px 7.5px 1.5px rgba(0,0,0, 0.3);
+
+}
+#kaava {    
+    margin-top: 20px;
+    margin-right: 20px;
+    text-align: right; 
+}

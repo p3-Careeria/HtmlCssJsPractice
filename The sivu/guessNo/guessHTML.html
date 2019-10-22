@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Arvauspeli</title>
+    <link rel="shortcut icon" href="guessIcon.ico">
+
+    <script src="guessJS.js"></script>
+    <link rel="stylesheet" type="text/css" href="../styleCSS.css">
+</head>
+
+<body>
+    <div class="bgDiv" id="GuessBg">
+        <div class="mainBox" id="MbGuess">
+            <h1>Quizzz Game</h1>
+            <p>Can you name the number between 1 and 100?</p>
+            <form>
+                <p>
+                    Enter answer: &nbsp; <input type="text" id="answer" name="answer" style="width: 145px; height: 25px;"/>
+                    <button id="guessNoBtn" input type="button" value="Submit"
+                        onclick="arvausPeli();">Guess</button>
+                </p>
+                <p id="p1" style="margin-top: 110px;"></p>
+            </form>
+        </div>
+    </div>
+
+
+</body>
+</html>

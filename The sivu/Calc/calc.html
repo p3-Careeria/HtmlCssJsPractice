@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Calculator</title>
+    <meta charset="UTF-8">
+    <script src="calcJS.js"></script>
+    <link rel="stylesheet" type="text/css" href="../styleCSS.css">
+    <title>Simple Calculator</title>
+    <link rel="shortcut icon" href="plusMinusIcon.ico">
+</head>
+
+<body>
+    <div class="bgDiv" id="CalcBg">
+        <div class="mainBox" style="height: 600px; ">
+            <div id="naytto">
+                <p id="kaava"></p>
+            </div>
+            <!--1. -->
+            <button class="calcBtn" id="btn7" onclick="addToScreen(7)">7</button>
+            <button class="calcBtn" id="btn8" onclick="addToScreen(8)">8</button>
+            <button class="calcBtn" id="btn9" onclick="addToScreen(9)">9</button>
+            <button class="calcBtn" id="btnJ" style="font-size: 25px" onclick="addDivision()">÷</button>
+            <!--2. -->
+            <button class="calcBtn" id="btn4" onclick="addToScreen(4)">4</button>
+            <button class="calcBtn" id="btn5" onclick="addToScreen(5)">5</button>
+            <button class="calcBtn" id="btn6" onclick="addToScreen(6)">6</button>
+            <button class="calcBtn" id="btnX" onclick="addMultip()">X</button>
+            <!--3. -->
+            <button class="calcBtn" id="btn1" onclick="addToScreen(1)">1</button>
+            <button class="calcBtn" id="btn2" onclick="addToScreen(2)">2</button>
+            <button class="calcBtn" id="btn3" onclick="addToScreen(3)">3</button>
+            <button class="calcBtn" id="btnM" style="font-size: 25px" onclick="addMinus()">-</button>
+            <!--4.  -->
+            <button class="calcBtn" id="btnC" onclick="clearScreen()">C</button>
+            <button class="calcBtn" id="btn0" onclick="addToScreen(0)">0</button>
+            <button class="calcBtn" id="btnPi" onclick="addDot()">.</button>
+            <button class="calcBtn" id="btnP" style="font-size: 25px" onclick="addPlus()">+</button>
+            <!--5.  -->
+            <button class="calcBtn" id="btnBS" style="font-size: 25px" onclick="delOne()">←</button>
+            <button class="calcBtn" id="btnSA" onclick="openBracket()">(</button>
+            <button class="calcBtn" id="btnSK" onclick="closeBracket()">)</button>
+            <button class="calcBtn" id="btnO" onclick="result()">=</button>
+        </div>
+    </div>
+</body>
+
+</html>
